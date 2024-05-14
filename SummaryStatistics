@@ -1,0 +1,13 @@
+import java.util.IntSummaryStatistics;
+import java.util.stream.IntStream;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {3, 7, 2, 9, 1, 6, 8, 4, 5};
+
+        IntSummaryStatistics stats = IntStream.of(numbers).summaryStatistics();
+        int max = stats.getMax();
+
+        System.out.println("The largest number is: " + max);
+    }
+}
