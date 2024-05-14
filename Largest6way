@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {3, 7, 2, 9, 1, 6, 8, 4, 5};
+
+        int max = Arrays.stream(numbers)
+                        .reduce(Integer.MIN_VALUE, Math::max);
+
+        System.out.println("The largest number is: " + max);
+    }
+}
